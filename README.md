@@ -21,8 +21,7 @@ This project is a React application representing a mock file system tree. Users 
 
 1. **Clone the repository:**
 
-   git clone <repository-url>
-   cd mock-file-system
+   git clone git@github.com:ZakhariiF/mock-file-system.git
 
 2. Install dependencies:
    npm install
