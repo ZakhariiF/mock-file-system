@@ -20,13 +20,15 @@ body {
   cursor: pointer;
 }
 
-.folder > div {
+.folder > div,
+.file > div {
   display: flex;
+  align-items: center;
   margin-left: 0;
 }
 
 .folder > div:hover,
-.file:hover {
+.file > div:hover {
   background-color: #e0e0e0;
 }
 
@@ -57,4 +59,48 @@ body {
   padding-left: 10px;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #ddd;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+button.private {
+  background-color: #28a745;
+}
+
+button.private:hover {
+  background-color: #218838;
+}
+
+button.unmark-private {
+  background-color: #ffc107;
+}
+
+button.unmark-private:hover {
+  background-color: #e0a800;
 }
